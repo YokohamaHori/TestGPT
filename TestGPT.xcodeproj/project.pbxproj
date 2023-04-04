@@ -11,6 +11,7 @@
 		277088C229DC24BF00D527ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277088C129DC24BF00D527ED /* ContentView.swift */; };
 		277088C429DC24BF00D527ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 277088C329DC24BF00D527ED /* Assets.xcassets */; };
 		277088C729DC24BF00D527ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 277088C629DC24BF00D527ED /* Preview Assets.xcassets */; };
+		27ED0E2F29DC25F500CC99CF /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 27ED0E2E29DC25F500CC99CF /* OpenAISwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27ED0E2F29DC25F500CC99CF /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = TestGPT;
+			packageProductDependencies = (
+				27ED0E2E29DC25F500CC99CF /* OpenAISwift */,
+			);
 			productName = TestGPT;
 			productReference = 277088BC29DC24BF00D527ED /* TestGPT.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 277088B329DC24BF00D527ED;
+			packageReferences = (
+				27ED0E2D29DC25F500CC99CF /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+			);
 			productRefGroup = 277088BD29DC24BF00D527ED /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -337,6 +345,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		27ED0E2D29DC25F500CC99CF /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		27ED0E2E29DC25F500CC99CF /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27ED0E2D29DC25F500CC99CF /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 277088B429DC24BF00D527ED /* Project object */;
 }
